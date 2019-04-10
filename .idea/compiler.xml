@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-aop" />
+        <module name="springboot-async" />
+        <module name="springboot-cache" />
+        <module name="springboot-ehcache" />
+        <module name="springboot-multisource" />
+        <module name="springboot-mybatis" />
+        <module name="springboot-redis" />
+        <module name="SpringCloud-Learning" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-aop" options="-parameters" />
+      <module name="springboot-async" options="-parameters" />
+      <module name="springboot-cache" options="-parameters" />
+      <module name="springboot-ehcache" options="-parameters" />
+      <module name="springboot-multisource" options="-parameters" />
+      <module name="springboot-mybatis" options="-parameters" />
+      <module name="springboot-redis" options="-parameters" />
+    </option>
+  </component>
+</project>
