@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/springboot-redis/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-multisource/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-transaction/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-restful/pom.xml" />
       </list>
     </option>
   </component>
