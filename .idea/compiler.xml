@@ -13,6 +13,7 @@
         <module name="springboot-multisource" />
         <module name="springboot-mybatis" />
         <module name="springboot-redis" />
+        <module name="springboot-transaction" />
         <module name="SpringCloud-Learning" />
       </profile>
     </annotationProcessing>
@@ -26,6 +27,7 @@
       <module name="springboot-multisource" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
+      <module name="springboot-transaction" options="-parameters" />
     </option>
   </component>
 </project>

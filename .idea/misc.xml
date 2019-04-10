@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/springboot-ehcache/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-redis/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-multisource/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-transaction/pom.xml" />
       </list>
     </option>
   </component>
