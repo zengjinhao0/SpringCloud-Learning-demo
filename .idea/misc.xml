@@ -15,6 +15,8 @@
         <option value="$PROJECT_DIR$/springboot-transaction/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-thymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-restful/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-shiro-demo1/pom.xml" />
       </list>
     </option>
   </component>
