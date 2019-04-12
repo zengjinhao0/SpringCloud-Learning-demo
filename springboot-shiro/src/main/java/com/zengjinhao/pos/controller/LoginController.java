@@ -4,6 +4,7 @@ package com.zengjinhao.pos.controller;
 import com.zengjinhao.pos.config.properties.MyProperties;
 import com.zengjinhao.pos.exception.ForbiddenUserException;
 import com.zengjinhao.pos.service.ManagerInfoService;
+import com.zengjinhao.pos.shiro.IncorrectCaptchaException;
 import com.zengjinhao.pos.shiro.ShiroKit;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.DisabledAccountException;
@@ -55,56 +56,29 @@ public class LoginController {
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String login(HttpServletRequest request, Map<String, Object> map) {
         _logger.info("登录方法start.........");
-//        // 登录失败从request中获取shiro处理的异常信息。shiroLoginFailure:就是shiro异常类的全类名.
-//        Object exception = request.getAttribute("shiroLoginFailure");
-//        String msg;
-//        if (exception != null) {
-//            if (UnknownAccountException.class.isInstance(exception)) {
-//                msg = "用户名不正确，请重新输入";
-//            } else if (IncorrectCredentialsException.class.isInstance(exception)) {
-//                msg = "密码错误，请重新输入";
-//            } else if (IncorrectCaptchaException.class.isInstance(exception)) {
-//                msg = "验证码错误";
-//            } else if (ForbiddenUserException.class.isInstance(exception)) {
-//                msg = "该用户已被禁用，如有疑问请联系系统管理员。";
-//            } else {
-//                msg = "发生未知错误，请联系管理员。";
-//            }
-//            map.put("username", request.getParameter("username"));
-//            map.put("password", request.getParameter("password"));
-//            map.put("msg", msg);
-//            return "login";
-//        }
-//        //如果已经登录，直接跳转主页面
+        // 登录失败从request中获取shiro处理的异常信息。shiroLoginFailure:就是shiro异常类的全类名.
+        Object exception = request.getAttribute("shiroLoginFailure");
+        String msg;
+        if (exception != null) {
+            if (UnknownAccountException.class.isInstance(exception)) {
+                msg = "用户名不正确，请重新输入";
+            } else if (IncorrectCredentialsException.class.isInstance(exception)) {
+                msg = "密码错误，请重新输入";
+            } else if (IncorrectCaptchaException.class.isInstance(exception)) {
+                msg = "验证码错误";
+            } else if (ForbiddenUserException.class.isInstance(exception)) {
+                msg = "该用户已被禁用，如有疑问请联系系统管理员。";
+            } else {
+                msg = "发生未知错误，请联系管理员。";
+            }
+            map.put("username", request.getParameter("username"));
+            map.put("password", request.getParameter("password"));
+            map.put("msg", msg);
+            return "login";
+        }
+        //如果已经登录，直接跳转主页面
         return "index";
     }
-
-//    // 登录提交地址和applicationontext-shiro.xml配置的loginurl一致。 (配置文件方式的说法)
-//    @RequestMapping(value = "/login", method = RequestMethod.POST)
-//    public String login(String username, String password, Model model) {
-//        _logger.info("登录方法start.........");
-//        Subject user = SecurityUtils.getSubject();
-//        UsernamePasswordToken token = new UsernamePasswordToken(username, password);
-//        try {
-//            //shiro帮我们匹配密码什么的，我们只需要把东西传给它，它会根据我们在UserRealm里认证方法设置的来验证
-//            user.login(token);
-//            return "redirect:/index";
-//        } catch (UnknownAccountException e) {
-//            //账号不存在和下面密码错误一般都合并为一个账号或密码错误，这样可以增加暴力破解难度
-//            model.addAttribute("message", "账号不存在！");
-//        } catch (
-//                DisabledAccountException e) {
-//            model.addAttribute("message", "账号未启用！");
-//        } catch (IncorrectCredentialsException e) {
-//            model.addAttribute("message", "密码错误！");
-//        } catch (Throwable e) {
-//            model.addAttribute("message", "未知错误！");
-//        }
-//        return "login";
-//    }
-
-
-
 
 
     /**

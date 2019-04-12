@@ -84,9 +84,21 @@ public class ShiroConfig {
     public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager) {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
         shiroFilterFactoryBean.setSecurityManager(securityManager);
-        shiroFilterFactoryBean.setLoginUrl("/login");
-        shiroFilterFactoryBean.setSuccessUrl("/");
-        shiroFilterFactoryBean.setUnauthorizedUrl("/unauth");
+        shiroFilterFactoryBean.setLoginUrl("/login");// 如果不设置默认会自动寻找Web工程根目录下的"/login.jsp"页面
+        shiroFilterFactoryBean.setSuccessUrl("/");// 登录成功后要跳转的链接
+        shiroFilterFactoryBean.setUnauthorizedUrl("/unauth");// 未授权界面，不生效(详情原因看MyExceptionResolver)
+
+
+
+        //anon:匿名拦截器，即不需要登录即可访问；一般用于静态资源过滤；示例“/static/**=anon”
+        //authc:如“/**=authc”，基于表单的拦截器,如果没有登录会跳到相应的登录页面登录
+        // 主要属性：usernameParam：表单提交的用户名参数名（ username）
+        // passwordParam：表单提交的密码参数名（password）
+        // rememberMeParam：表单提交的密码参数名（rememberMe）
+        // loginUrl：登录页面地址（/login.jsp）
+        // successUrl：登录成功后的默认重定向地址
+        // failureKeyAttribute：登录失败后错误信息存储key（shiroLoginFailure）；
+
 
         //注意此处使用的是LinkedHashMap，是有顺序的，shiro会按从上到下的顺序匹配验证，匹配了就不再继续验证
         //所以上面的url要苛刻，宽松的url要放在下面，尤其是"/**"要放到最下面，如果放前面的话其后的验证规则就没作用了。

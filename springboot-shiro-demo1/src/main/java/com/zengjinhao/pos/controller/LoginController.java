@@ -45,6 +45,7 @@ public class LoginController {
 
 
     /**
+     * 所有的访问都会经过login去验证
      * get请求，登录页面跳转
      * 登录页(shiro配置需要两个/login 接口,一个是get用来获取登陆页面,一个用post用于登录)
      * @return

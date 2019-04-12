@@ -99,7 +99,8 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setSuccessUrl("/index");
         // 未授权界面，不生效(详情原因看MyExceptionResolver)
         shiroFilterFactoryBean.setUnauthorizedUrl("/errorView/403_error.html");
-        //验证码过滤器
+        //设置过滤器
+        //验证码过滤器（登录验证）在方法执行之前进行拦截
         Map<String, Filter> filtersMap = shiroFilterFactoryBean.getFilters();
         KaptchaFilter kaptchaFilter = new KaptchaFilter();
         filtersMap.put("kaptchaFilter", kaptchaFilter);
@@ -112,8 +113,8 @@ public class ShiroConfig {
         //port：比如/admins/user/**=port[8081],当请求的url的端口不是8081是跳转到schemal：//serverName：8081?queryString,其中schmal是协议http或https等，serverName是你访问的host,8081是url配置里port的端口，queryString是你访问的url里的？后面的参数。
         //perms：比如/admins/user/**=perms[user：add：*],perms参数可以写多个，多个时必须加上引号，并且参数之间用逗号分割，比如/admins/user/**=perms["user：add：*,user：modify：*"]，当有多个参数时必须每个参数都通过才通过，想当于isPermitedAll()方法。
         //roles：比如/admins/user/**=roles[admin],参数可以写多个，多个时必须加上引号，并且参数之间用逗号分割，当有多个参数时，比如/admins/user/**=roles["admin,guest"],每个参数通过才算通过，相当于hasAllRoles()方法。//要实现or的效果看http://zgzty.blog.163.com/blog/static/83831226201302983358670/
-        //anon：比如/admins/**=anon 没有参数，表示可以匿名使用。
-        //authc：比如/admins/user/**=authc表示需要认证才能使用，没有参数
+        //anon:匿名拦截器，即不需要登录即可访问；一般用于静态资源过滤；示例“/static/**=anon”
+        //authc:如“/**=authc”，基于表单的拦截器,如果没有登录会跳到相应的登录页面登录
         //authcBasic：比如/admins/user/**=authcBasic没有参数表示httpBasic认证
         //ssl：比如/admins/user/**=ssl没有参数，表示安全的url请求，协议为https
         //user：比如/admins/user/**=user没有参数表示必须存在用户，当登入操作时不做检查
