@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/springboot-restful/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-shiro/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-shiro-demo1/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-resttemplate/pom.xml" />
       </list>
     </option>
   </component>

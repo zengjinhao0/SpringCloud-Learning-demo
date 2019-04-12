@@ -14,6 +14,7 @@
         <module name="springboot-mybatis" />
         <module name="springboot-redis" />
         <module name="springboot-restful" />
+        <module name="springboot-resttemplate" />
         <module name="springboot-shiro" />
         <module name="springboot-shiro-demo1" />
         <module name="springboot-thymeleaf" />
@@ -32,6 +33,7 @@
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-restful" options="-parameters" />
+      <module name="springboot-resttemplate" options="-parameters" />
       <module name="springboot-shiro" options="-parameters" />
       <module name="springboot-shiro-demo1" options="-parameters" />
       <module name="springboot-thymeleaf" options="-parameters" />
