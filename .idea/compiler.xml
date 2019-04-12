@@ -10,6 +10,7 @@
         <module name="springboot-async" />
         <module name="springboot-cache" />
         <module name="springboot-ehcache" />
+        <module name="springboot-jwt" />
         <module name="springboot-multisource" />
         <module name="springboot-mybatis" />
         <module name="springboot-redis" />
@@ -29,6 +30,7 @@
       <module name="springboot-async" options="-parameters" />
       <module name="springboot-cache" options="-parameters" />
       <module name="springboot-ehcache" options="-parameters" />
+      <module name="springboot-jwt" options="-parameters" />
       <module name="springboot-multisource" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />

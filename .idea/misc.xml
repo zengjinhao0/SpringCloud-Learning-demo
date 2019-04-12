@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/springboot-shiro/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-shiro-demo1/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-resttemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-jwt/pom.xml" />
       </list>
     </option>
   </component>
