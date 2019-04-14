@@ -19,6 +19,10 @@
         <option value="$PROJECT_DIR$/springboot-shiro-demo1/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-resttemplate/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-schedule/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-cxf/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-websocket/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-websocket1/pom.xml" />
       </list>
     </option>
   </component>

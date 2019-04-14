@@ -9,6 +9,7 @@
         <module name="springboot-aop" />
         <module name="springboot-async" />
         <module name="springboot-cache" />
+        <module name="springboot-cxf" />
         <module name="springboot-ehcache" />
         <module name="springboot-jwt" />
         <module name="springboot-multisource" />
@@ -16,10 +17,13 @@
         <module name="springboot-redis" />
         <module name="springboot-restful" />
         <module name="springboot-resttemplate" />
+        <module name="springboot-schedule" />
         <module name="springboot-shiro" />
         <module name="springboot-shiro-demo1" />
         <module name="springboot-thymeleaf" />
         <module name="springboot-transaction" />
+        <module name="springboot-websocket" />
+        <module name="springboot-websocket1" />
         <module name="SpringCloud-Learning" />
       </profile>
     </annotationProcessing>
@@ -29,6 +33,7 @@
       <module name="springboot-aop" options="-parameters" />
       <module name="springboot-async" options="-parameters" />
       <module name="springboot-cache" options="-parameters" />
+      <module name="springboot-cxf" options="-parameters" />
       <module name="springboot-ehcache" options="-parameters" />
       <module name="springboot-jwt" options="-parameters" />
       <module name="springboot-multisource" options="-parameters" />
@@ -36,10 +41,13 @@
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-restful" options="-parameters" />
       <module name="springboot-resttemplate" options="-parameters" />
+      <module name="springboot-schedule" options="-parameters" />
       <module name="springboot-shiro" options="-parameters" />
       <module name="springboot-shiro-demo1" options="-parameters" />
       <module name="springboot-thymeleaf" options="-parameters" />
       <module name="springboot-transaction" options="-parameters" />
+      <module name="springboot-websocket" options="-parameters" />
+      <module name="springboot-websocket1" options="-parameters" />
     </option>
   </component>
 </project>
