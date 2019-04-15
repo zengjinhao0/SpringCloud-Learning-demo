@@ -10,10 +10,11 @@
         <module name="springboot-async" />
         <module name="springboot-cache" />
         <module name="springboot-cxf" />
-        <module name="springboot-ehcache" />
+        <module name="springboot-echarts" />
         <module name="springboot-jwt" />
         <module name="springboot-multisource" />
         <module name="springboot-mybatis" />
+        <module name="springboot-netty-socketio" />
         <module name="springboot-redis" />
         <module name="springboot-restful" />
         <module name="springboot-resttemplate" />
@@ -27,6 +28,9 @@
         <module name="SpringCloud-Learning" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot-ehcache" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -34,10 +38,12 @@
       <module name="springboot-async" options="-parameters" />
       <module name="springboot-cache" options="-parameters" />
       <module name="springboot-cxf" options="-parameters" />
+      <module name="springboot-echarts" options="-parameters" />
       <module name="springboot-ehcache" options="-parameters" />
       <module name="springboot-jwt" options="-parameters" />
       <module name="springboot-multisource" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
+      <module name="springboot-netty-socketio" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-restful" options="-parameters" />
       <module name="springboot-resttemplate" options="-parameters" />
