@@ -15,6 +15,7 @@
         <module name="springboot-multisource" />
         <module name="springboot-mybatis" />
         <module name="springboot-netty-socketio" />
+        <module name="springboot-rabbitmq" />
         <module name="springboot-redis" />
         <module name="springboot-restful" />
         <module name="springboot-resttemplate" />
@@ -44,6 +45,7 @@
       <module name="springboot-multisource" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-netty-socketio" options="-parameters" />
+      <module name="springboot-rabbitmq" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-restful" options="-parameters" />
       <module name="springboot-resttemplate" options="-parameters" />

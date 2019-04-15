@@ -25,6 +25,7 @@
         <option value="$PROJECT_DIR$/springboot-websocket1/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-netty-socketio/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-echarts/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-rabbitmq/pom.xml" />
       </list>
     </option>
   </component>
