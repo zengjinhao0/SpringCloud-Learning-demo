@@ -26,6 +26,10 @@
         <option value="$PROJECT_DIR$/springboot-netty-socketio/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-echarts/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-quartz/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-task/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-2x-quartz/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-quartz/pom.xml" />
       </list>
     </option>
   </component>

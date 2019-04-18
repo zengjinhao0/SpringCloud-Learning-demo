@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-task" />
+        <module name="spring-data-quartz" />
         <module name="springboot-aop" />
         <module name="springboot-async" />
         <module name="springboot-cache" />
@@ -31,10 +33,12 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springboot-ehcache" target="1.8" />
+      <module name="springboot-quartz" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-task" options="-parameters" />
       <module name="springboot-aop" options="-parameters" />
       <module name="springboot-async" options="-parameters" />
       <module name="springboot-cache" options="-parameters" />
@@ -45,6 +49,7 @@
       <module name="springboot-multisource" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-netty-socketio" options="-parameters" />
+      <module name="springboot-quartz" options="-parameters" />
       <module name="springboot-rabbitmq" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-restful" options="-parameters" />

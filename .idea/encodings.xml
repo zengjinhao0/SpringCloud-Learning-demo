@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/springboot-2x-quartz" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-aop" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-async" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-cache" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-cxf" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-echarts" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-ehcache" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jwt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-multisource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-multisource/src/main/resources/application.yml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/springboot-mybatis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mybatis/src/main/resources/application.yml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/springboot-netty-socketio" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-quartz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-quartz" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-quartz/src/main/resources/application.yml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/springboot-rabbitmq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis/src/main/resources/application.yml" charset="GBK" />
